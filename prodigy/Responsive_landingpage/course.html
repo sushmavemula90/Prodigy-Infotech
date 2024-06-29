@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>University Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />    
+    <style>
+      .course-buttons {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .course-buttons button {
+        padding: 10px;
+        font-size: 14px;
+        border: none;
+        background-color:rgb(92, 77, 203);
+        color: white;
+        cursor: pointer;
+        border-radius: 5px;
+      }
+      .course-buttons button:hover {
+        background-color:rgb(50, 127, 205);
+      }
+    </style>
+  </head>
+  <body>
+    <section class="sub-header">
+      <nav>
+        <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSES</a></li>
+            <li><a href="./blog.html">EXAMS</a></li>
+            <li><a href="./researches.html">RESEARCHES</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <h1>Our Courses</h1>
+    </section>
+   <section class="course">
+    <h1>Courses We Offer</h1>
+    <div class="course-buttons">
+      <button>Introduction to Computer Science</button>
+      <button>Data Structures and Algorithms</button>
+      <button>Machine Learning</button>
+      <button>Artificial Intelligence</button>
+      <button>Database Management Systems</button>
+      <button>Operating Systems</button>
+      <button>Web Development</button>
+      <button>Mobile App Development</button>
+      <button>Software Engineering</button>
+      <button>Cyber Security</button>
+      <button>Cloud Computing</button>
+      <button>Big Data Analytics</button>
+      <button>Human-Computer Interaction</button>
+      <button>Computer Networks</button>
+      <button>Blockchain Technology</button>
+      <button>Linear Algebra</button>
+      <button>Calculus</button>
+      <button>Statistics</button>
+      <button>Probability Theory</button>
+      <button>Differential Equations</button>
+      <button>Real Analysis</button>
+      <button>Abstract Algebra</button>
+      <button>Number Theory</button>
+      <button>Topology</button>
+      <button>Graph Theory</button>
+      <button>Combinatorics</button>
+      <button>Complex Analysis</button>
+      <button>Engineering Mathematics</button>
+      <button>Mathematical Modeling</button>
+      <button>Financial Mathematics</button>
+      <button>General Chemistry</button>
+      <button>Organic Chemistry</button>
+      <button>Inorganic Chemistry</button>
+      <button>Physical Chemistry</button>
+      <button>Analytical Chemistry</button>
+      <button>Biochemistry</button>
+      <button>Materials Chemistry</button>
+      <button>Environmental Chemistry</button>
+      <button>Medicinal Chemistry</button>
+      <button>Polymer Chemistry</button>
+      <button>Quantum Chemistry</button>
+      <button>Thermodynamics</button>
+      <button>Electrochemistry</button>
+      <button>Surface Chemistry</button>
+      <button>Solid State Chemistry</button>
+      <button>Industrial Chemistry</button>
+      <button>Forensic Chemistry</button>
+      <button>Introduction to Physics</button>
+      <button>Classical Mechanics</button>
+      <button>Electromagnetism</button>
+      <button>Quantum Mechanics</button>
+      <button>Thermodynamics and Statistical Mechanics</button>
+      <button>Optics</button>
+      <button>Acoustics</button>
+      <button>Astrophysics</button>
+      <button>Nuclear Physics</button>
+      <button>Particle Physics</button>
+      <button>Condensed Matter Physics</button>
+      <button>Plasma Physics</button>
+      <button>Biophysics</button>
+      <button>Geophysics</button>
+      <button>Mathematical Physics</button>
+      <button>Engineering Physics</button>
+      <button>Environmental Science</button>
+      <button>Ecology</button>
+      <button>Botany</button>
+      <button>Zoology</button>
+      <button>Microbiology</button>
+      <button>Genetics</button>
+      <button>Evolutionary Biology</button>
+      <button>Marine Biology</button>
+      <button>Conservation Biology</button>
+      <button>Cell Biology</button>
+      <button>Sports Law</button>
+      <button>Entertainment Law</button>
+      
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>The main aim of this web site is to help students around the worls to get high class education for free.</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa-solid fa-heart"></i> by Sushma</p>
+  </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>

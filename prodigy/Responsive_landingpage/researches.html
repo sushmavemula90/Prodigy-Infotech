@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <style>
+    .course-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .course-buttons button {
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      background-color:rgb(92, 77, 203);
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+    .course-buttons button:hover {
+      background-color:rgb(50, 127, 205);
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="./images/logo.png" alt="logo" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSES</a></li>
+            <li><a href="./blog.html">EXAMS</a></li>
+            <li><a href="./researches.html">RESEARCHES</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Various reasearches acrross all streams</h1>
+  </section>
+  <section class="course">
+    <h1>Reasearches</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <div class="course-buttons">
+            <button onclick="showOptions('exam1')">Law</button>
+            <button onclick="showOptions('exam2')">Science</button>
+            <button onclick="showOptions('exam3')">Computers</button>
+            <button onclick="showOptions('exam4')">Robotics</button>
+            <button onclick="showOptions('exam5')">Medicine</button>
+            <button onclick="showOptions('exam6')">Engineering</button>
+            <button onclick="showOptions('exam7')">Finance</button>
+            <button onclick="showOptions('exam8')">Business</button>
+            <button onclick="showOptions('exam9')">Psychology</button>
+            <button onclick="showOptions('exam10')">Economics</button>
+            <button onclick="showOptions('exam11')">Architecture</button>
+            <button onclick="showOptions('exam12')">Design</button>
+            <button onclick="showOptions('exam13')">Education</button>
+            <button onclick="showOptions('exam14')">Languages</button>
+            <button onclick="showOptions('exam15')">Agriculture</button>
+            <button onclick="showOptions('exam16')">Geography</button>
+            <button onclick="showOptions('exam17')">Political Science</button>
+            <button onclick="showOptions('exam18')">History</button>
+            <button onclick="showOptions('exam19')">Sociology</button>
+            <button onclick="showOptions('exam20')">Anthropology</button>
+            <button onclick="showOptions('exam19')">Medicine</button>
+            <button onclick="showOptions('exam20')">Ornithology</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>The main aim of this web site is to help students around the worls to get high class education for free.</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa-solid fa-heart"></i> by Sushma</p>
+  </section>
+  <script src="script.js"></script>
+</body>
+</html>

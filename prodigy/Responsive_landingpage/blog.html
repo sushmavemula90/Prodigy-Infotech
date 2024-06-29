@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>University Website</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <style>
+    body {
+      font-family: 'Noto Serif', serif;
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    .exam-buttons {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 10px;
+      margin: 20px;
+      width: 90%;
+    }
+    .exam-buttons button, .options button {
+      padding: 10px;
+      font-size: 14px;
+      border: none;
+      background-color: rgb(66, 50, 210);
+      color: white;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+    .exam-buttons button:hover, .options button:hover {
+      background-color: lightslategray;
+    }
+    .options {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      margin: 20px;
+    }
+    .options button {
+      margin: 5px 0;
+      width: 200px;
+    }
+  </style>
+</head>
+<body>
+  <section class="sub-header">
+    <nav>
+      <a href="index.html"><img src="./images/logo.png" alt="" /></a>
+      <div class="nav-links" id="navLinks">
+        <i class="fa-solid fa fa-xmark" onclick="hideMenu()"></i>
+        <ul>
+          <li><a href="./index.html">HOME</a></li>
+            <li><a href="./about.html">ABOUT</a></li>
+            <li><a href="./course.html">COURSES</a></li>
+            <li><a href="./blog.html">EXAMS</a></li>
+            <li><a href="./researches.html">RESEARCHES</a></li>
+            <li><a href="./contact.html">CONTACT</a></li>
+        </ul>
+      </div>
+      <i class="fa-solid fa fa-bars" onclick="showMenu()"></i>
+    </nav>
+    <h1>Prepare for Competitive Exams with Ease</h1>
+  </section>
+
+  <section>
+    <div class="exam-buttons">
+      <button onclick="showOptions('exam1')">JEE Main</button>
+      <button onclick="showOptions('exam2')">NEET</button>
+      <button onclick="showOptions('exam3')">CAT</button>
+      <button onclick="showOptions('exam4')">GATE</button>
+      <button onclick="showOptions('exam5')">GRE</button>
+    </div>
+
+    <div class="options" id="options">
+      <h2 id="exam-title"></h2>
+      <button>Syllabus</button>
+      <button>Previous Years' Papers</button>
+      <button>Test Papers</button>
+      <button>Materials</button>
+    </div>
+  </section>
+
+  <section class="footer">
+    <h4>About Us</h4>
+    <p>The main aim of this web site is to help students around the worls to get high class education for free.</p>
+    <div class="icons">
+      <i class="fa-brands fa-facebook"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-instagram"></i>
+      <i class="fa-brands fa-linkedin"></i>
+    </div>
+    <p>Made With <i class="fa-solid fa-heart"></i> by Sushma</p>
+  </section>
+  <script>
+    function showOptions(exam) {
+      const options = document.getElementById('options');
+      const title = document.getElementById('exam-title');
+      options.style.display = 'flex';
+
+      switch (exam) {
+        case 'exam1':
+          title.textContent = 'JEE Main';
+          break;
+        case 'exam2':
+          title.textContent = 'NEET';
+          break;
+        case 'exam3':
+          title.textContent = 'CAT';
+          break;
+        case 'exam4':
+          title.textContent = 'GATE';
+          break;
+        case 'exam5':
+          title.textContent = 'GRE';
+          break;
+        default:
+          title.textContent = '';
+      }
+    }
+
+    function showMenu() {
+      document.getElementById("navLinks").style.right = "0";
+    }
+
+    function hideMenu() {
+      document.getElementById("navLinks").style.right = "-200px";
+    }
+  </script>
+</body>
+</html>

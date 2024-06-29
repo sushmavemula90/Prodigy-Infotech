@@ -1,0 +1,86 @@
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-image: url(clock.jpg); /* Background image */
+    background-size: cover; /* Ensure the background covers the whole page */
+    background-position: center; /* Center the background image */
+    background-repeat: no-repeat; /* Prevent the background image from repeating */
+    font-family: Arial, sans-serif;
+    margin: 0;
+    height: 100vh;
+    color: #333; /* Darker text color for contrast */
+}
+
+header {
+    width: 100%;
+    background-color: #701829; /* Steel blue background color for the header */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-logo {
+    height: 50px; /* Adjust the size as needed */
+    width: auto;
+    margin: 0 20px; /* Add space between the logo and the text */
+}
+
+.stopwatch-container {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.stopwatch {
+    background: #701829; /* Semi-transparent white background for the stopwatch */
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    color: #0f0e0e; /* Ensuring text is visible against white background */
+}
+
+.display {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.buttons button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 4px;
+    background-color: #191a1b; /* Steel blue background for buttons */
+    color: white;
+    cursor: pointer;
+}
+
+.buttons button:hover {
+    background-color: rgb(238, 5, 5); /* Lighter blue on hover */
+}
+
+.laps {
+    margin-top: 20px;
+    text-align: left;
+}
+
+.laps ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.laps li {
+    padding: 5px;
+    border-bottom: 1px solid #ddd;
+}
